@@ -17,7 +17,7 @@
         if ($verify_booking->rowCount() > 0) {
             $delete_booking = $conn->prepare("DELETE FROM bookings WHERE booking_id = ?");
             $delete_booking->execute([$booking_id]);
-            $success_msg[] = "Reserva cancalada com sucesso!";
+            $success_msg[] = "Reserva cancelada com sucesso!";
 
         }else {
             $warning_msg[] = "Reserva já cancelada";
