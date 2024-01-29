@@ -3,7 +3,7 @@
 $db_name  = 'hotel_db';
 $host = 'localhost';
 $user = 'root';
-$passaword =  '#Hella2814';
+$passaword =  '';
 
 $conn = new PDO("mysql:host=$host;dbname=$db_name",$user,$passaword);
 
